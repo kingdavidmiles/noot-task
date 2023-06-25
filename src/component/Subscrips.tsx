@@ -10,6 +10,7 @@ const Subscribe = () => {
   return (
     <>
       <div className={styles.subscribBg}>
+        {/* display only on mobile */}
         <Container
           maxWidth={"sm"}
           sx={{
@@ -35,7 +36,11 @@ const Subscribe = () => {
                   variant="contained"
                   sx={{ mt: 0, background: "#FFDA47", color: "black" }}
                   size="large"
-                  style={{ height: "50px" }}
+                  style={{
+                    width: "100%",
+                    backgroundColor: "white",
+                    borderRadius: "10px",
+                  }}
                 >
                   Subscribe
                 </Button>
@@ -43,7 +48,7 @@ const Subscribe = () => {
             </Grid>
           </div>
         </Container>
-
+        {/* mobile display stop here */}
         <Grid container spacing={2}>
           <Grid
             item
@@ -85,7 +90,11 @@ const Subscribe = () => {
                   <TextField
                     id="outlined-basic"
                     variant="outlined"
-                    style={{ width: "100%" }}
+                    style={{
+                      width: "100%",
+                      backgroundColor: "white",
+                      borderRadius: "10px",
+                    }}
                   />
                 </Grid>
                 <Grid item md={6}>

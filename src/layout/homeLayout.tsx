@@ -372,8 +372,8 @@ export default function HomeLayout() {
             <Box>
               <Grid container spacing={1}>
                 <Grid item md={6} xs={12}>
-                  <Item elevation={0}>
-                    <Typography variant="h6" className={styles.toolbarFont}>
+                  <Item elevation={0} sx={{background:"transparent"}}>
+                    <Typography  variant="h6" className={styles.toolbarFont}>
                       We Help You Care for Animals with Nutrition
                     </Typography>
                   </Item>
