@@ -224,3 +224,16 @@
   padding-top: 15px !important;
   padding-bottom: 10px !important;
 }
+
+/* li{
+  color: red;
+} */
+li::marker {
+  color: #7c58d3;
+}
+
+
+.textfied{
+background-color: white;
+border-radius: 5px;
+}

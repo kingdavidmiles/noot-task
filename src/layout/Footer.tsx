@@ -45,6 +45,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Stack from "@mui/material/Stack";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import TextField from "@mui/material/TextField";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const workingHours = [
   { day: "Mon - Fri:", time: "7am – 6pm" },
   { day: "Saturday:", time: "9am – 4pm" },
@@ -239,7 +240,7 @@ const Footer = () => {
                   Newsletter
                 </Typography>
               </Box>
-              <Typography sx={{ pt: 2 }}>
+              <Typography sx={{ pt: 2, pb: 2 }}>
                 Be first in the queue! Get our latest news straight to your
                 inbox.
               </Typography>
@@ -256,6 +257,29 @@ const Footer = () => {
                   </Grid>
                 </Grid>
               </div> */}
+              <Grid container spacing={1}>
+                <Grid item md={8}>
+                  <div>
+                    <TextField
+                      label="email"
+                      id="outlined-size-small"
+                      defaultValue="email"
+                      size="small"
+                    />
+                  </div>
+                </Grid>
+                <Grid md={3} sx={{ pt: 1, ml: 2 }}>
+                  <Button
+                    variant="contained"
+                    disableElevation
+                    size="large"
+                    sx={{ background: "#7C58D3" }}
+                  >
+                    <ArrowForwardIcon />
+                  </Button>
+                </Grid>
+              </Grid>
+
               <Box sx={{ pt: 2 }}>
                 <Stack
                   spacing={{ xs: 1, sm: 8 }}

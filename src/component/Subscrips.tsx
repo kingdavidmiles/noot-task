@@ -1,4 +1,4 @@
-import { Box, Container, style } from "@mui/system";
+import { border, Box, Container, style } from "@mui/system";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import styles from "../style/MyComponent.module.css";
@@ -88,13 +88,11 @@ const Subscribe = () => {
               <Grid container spacing={2} sx={{ mt: 2 }}>
                 <Grid item md={6}>
                   <TextField
-                    id="outlined-basic"
-                    variant="outlined"
                     style={{
                       width: "100%",
-                      backgroundColor: "white",
-                      borderRadius: "10px",
                     }}
+                    label="your email"
+                    className={styles.textfied}
                   />
                 </Grid>
                 <Grid item md={6}>
